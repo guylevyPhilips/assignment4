@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment4';
+  currentNumber: number = null;
+
+  onGameStarted(numData: {incNumber: number}){
+    this.currentNumber = numData.incNumber;
+  }
+
 }
